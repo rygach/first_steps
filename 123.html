@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Learning</title>
+	<link rel="stylesheet" href = '123.css'>
+</head>
+<body>
+
+	<h1>Hello, this is my project!</h1>
+	<button class="basicBtn" id="myBtn">Калькулятор №1</button>
+	<button class="basicBtn" id="myBtn2">Калькулятор №2</button>
+	<button class="basicBtn" id="myBtn3">Анализатор текста</button>
+
+<!-- Задания по геометрии с 1 по 4 -->
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p>Калькулятор на JavaScript</p>
+			<input class="devices" type="text" value="Wigth or radius of cirlce" id="widthFigure"><br>
+			<input class="devices" type="text" value="Length" id="lengthFigure"><br>
+			<input class="devices" type="text" value="Third side of triangle" id="thirdSide"><br>
+			<button class="devices" id="areaBut">Площадь прямоугольника</button><br>
+			<button class="devices" id="perBut">Периметр прямоугольника</button><br>
+			<button class="devices" id="perBut2">Длина круга</button><br>
+			<button class="devices" id="areaBut2">Площадь круга</button><br>
+			<button class="devices" id="areaBut3">Площадь треугольника</button><br>
+			<div class="devices" id="outInf">Resultat is -</div><br>
+		</div>
+	</div>	
+
+<!-- Задания по матеше с 5 по 10 -->
+	<div id="modalMath" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p>Калькулятор на JavaScript</p>
+			<input class="devices" type="text" value="Вычислить" id="termValue1"><br>
+			<input class="devices" type="text" value="Вычислить 2" id="termValue2"><br>
+			<input class="devices" type="text" value="Вычислить 3" id="termValue3"><br>
+			<button class="devices" id="calcMath1">Calculate 1</button><br>
+			<button class="devices" id="calcMath2">Calculate 2</button><br>
+			<div class="devices" id="resultMath">Resultat is -</div><br>
+		</div>
+	</div>	
+
+<!-- 	Задания по анализатору текста -->
+	<div id="modalAnal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p>Калькулятор на JavaScript</p>
+			<input class="devices" type="text" value="Вводите" id="textArea"><br>
+			<button class="devices" id="actArea">Do this 1</button><br>
+			<div class="devices" id="resultArea">Look there!</div><br>
+		</div>
+	</div>
+
+	<script src="js/first.js"></script>
+	<script src="js/second.js"></script>
+	<script src="js/third.js"></script>
+</body>
+
+</html>
