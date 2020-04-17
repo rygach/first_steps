@@ -34,7 +34,7 @@ let header2 = new Header2('new hello', 'new site', 'gogogo');
 
 console.log(header2);
 
-header2.render('root');
+header2.render('OOP');
 
 Header2.hello('hi');
 
@@ -48,17 +48,17 @@ class Man {
     }
     render (x) {
         let out = [];
-        out += `<h1>${this.name}</h1>`;
-        out += `<h1>${this.age}</h1>`;
-        out += `<h1>${this.passport}</h1>`;
-        out += `<h1>${this.sex}</h1>`;
+        out += `<li>${this.name}</li>`;
+        out += `<li>${this.age}</li>`;
+        out += `<li>${this.passport}</li>`;
+        out += `<li>${this.sex}</li>`;
         document.getElementById(x).innerHTML = out;
         console.log(out);
     }
 }
 
 let man = new Man('Mary', '17', '123', 'female');
-man.render('root');
+man.render('OOP');
 
 // DZ #2
 class Employer extends Man {

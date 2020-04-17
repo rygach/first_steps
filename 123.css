@@ -39,3 +39,19 @@ h2 {
 h3 {
 	font-family: sans-serif;
 }
+#root {
+    margin: auto;
+	text-align: left;
+	width: 50%;
+	height: 1000px;
+	background: #edeef0;
+}
+#OOP {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#navig {
+	text-align: center;
+	box-shadow: 0 0 0 3px #d7e2f7;
+}
