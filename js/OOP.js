@@ -19,7 +19,7 @@ let header = new Header('Hello', 'world');
 
 //header.render('root');
 
-console.log(header);
+//console.log(header);
 
 // создаём новый класс(Header2), который будет наследоваться от класса Header
 // добавляем в новый класс (Header2) новое свойство - hero
@@ -32,11 +32,11 @@ class Header2 extends Header {
 
 let header2 = new Header2('new hello', 'new site', 'gogogo');
 
-console.log(header2);
+//console.log(header2);
 
-header2.render('OOP');
+//header2.render('OOP');
 
-Header2.hello('hi');
+//Header2.hello('hi');
 
 // ДЗ #1
 class Man {
@@ -58,7 +58,7 @@ class Man {
 }
 
 let man = new Man('Mary', '17', '123', 'female');
-man.render('OOP');
+//man.render('OOP');
 
 // DZ #2
 class Employer extends Man {
@@ -74,4 +74,4 @@ class Employer extends Man {
 
 let employer = new Employer('Grut', '22', '123', 'tree', '31.02.1995', '$2500');
 
-employer.outing();
+//employer.outing();
