@@ -11,7 +11,7 @@
 // Модифицируйте предыдущую задачу так, чтобы также вывелось сообщение 
 // о процентном содержании каждого символа в тексте.
 
-// В предыдущих задачах мы сделали так, что для нашего текста выводятся 4 параметра.
+//[COMPLETE] В предыдущих задачах мы сделали так, что для нашего текста выводятся 4 параметра.
 // Сделайте 4 чекбокса, которые будут регулировать, какие именно параметры показывать.
 
 let modalAnal = document.getElementById('modalAnal');
@@ -60,15 +60,23 @@ function considering() {
 	textArea.onchange = inputText = `${textArea.value}`;
 	//очень странно, не понял почему, но если поменять местами в цикле знаки
 	//то он начинает некорректно работать
+	let workArr = [];
 	for (i=0;i<inputText.length;i++) {
 		considerSymbols = inputText.split(' ');
+		workArr = inputText.split('');
 	}
 	let sym = considerSymbols.join('');
 	result.symNonSpaces = sym.length;
 	result.consid = considerSymbols.length;
 	result.allSymbols = inputText.length;
+	result.percents = new Set(workArr); // временно запишу сюда массив из всех символов, но символы будут здесь встречаться единожды. 
+	// что-то типо картотеки уникальных значений. влом просто пока что делать нахождение процента символа во всём тексте
 	return(result);
 }
+
+let testArray = [1, 2, 1, 'a', 2, 'b', 'c', 'c'];
+let unique = [new Set(testArray)];
+console.log(unique);
 
 let checkB1 = document.getElementById('checkB1');
 let checkB2 = document.getElementById('checkB2');
