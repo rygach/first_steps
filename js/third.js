@@ -38,7 +38,7 @@ class Result {
 		//сколько символов в общем
 		this.allSymbols = 0;
 		//сколько процентное соотношение
-		this.percents = 0;
+		this.percents = [];
 	}
 	checkMethod () {
 		console.log(this);
@@ -52,6 +52,9 @@ let selectFields = document.getElementById('selectFields');
 let inputText = [];
 let considerSymbols = [];
 let result = new Result(0, 0, 0, 0);
+// специальная переменная для процентов
+let percents;
+
 
 // проверяю, корректность созданного объекта
 //result.checkMethod();
@@ -61,6 +64,7 @@ function considering() {
 	//очень странно, не понял почему, но если поменять местами в цикле знаки
 	//то он начинает некорректно работать
 	let workArr = [];
+	inputText = inputText.toLowerCase();
 	for (i=0;i<inputText.length;i++) {
 		considerSymbols = inputText.split(' ');
 		workArr = inputText.split('');
@@ -69,19 +73,19 @@ function considering() {
 	result.symNonSpaces = sym.length;
 	result.consid = considerSymbols.length;
 	result.allSymbols = inputText.length;
-	result.percents = new Set(workArr); // временно запишу сюда массив из всех символов, но символы будут здесь встречаться единожды. 
+	// временно запишу сюда массив из всех символов, но символы будут здесь встречаться единожды. 
 	// что-то типо картотеки уникальных значений. влом просто пока что делать нахождение процента символа во всём тексте
+	percents = new Set(workArr);
+	percents = Array.from(percents);
 	return(result);
 }
-
-let testArray = [1, 2, 1, 'a', 2, 'b', 'c', 'c'];
-let unique = [new Set(testArray)];
-console.log(unique);
 
 let checkB1 = document.getElementById('checkB1');
 let checkB2 = document.getElementById('checkB2');
 let checkB3 = document.getElementById('checkB3');
 let checkB4 = document.getElementById('checkB4');
+
+
 
 actArea.onclick = function () {
 	  let output = considering();
@@ -89,5 +93,6 @@ actArea.onclick = function () {
 	  if (checkB1.checked) {resultArea.innerHTML += `<p>Количество символов без пробелов ${result.symNonSpaces}</p>`;}
 	  if (checkB2.checked) {resultArea.innerHTML += `<p>Количество слов в тексте ${result.consid}</p>`;}
 	  if (checkB3.checked) {resultArea.innerHTML += `<p>Количество символов в общем ${result.allSymbols}</p>`;}
-	  if (checkB4.checked) {resultArea.innerHTML += `<p>Процентное содержание букв ещё не сделал. Есть только массив из слов \\${considerSymbols}\\</p>`;}
+	  if (checkB4.checked) {resultArea.innerHTML += `<p>Процентное содержание букв ещё не сделал. Есть только массив из слов \\${percents}\\</p>`;}
+	  console.log(percents);
 }
