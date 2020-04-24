@@ -18,7 +18,6 @@ let modalAnal = document.getElementById('modalAnal');
 let myBtn3 = document.getElementById('myBtn3');
 let close3 = document.getElementsByClassName('close')[2];
 
-
 myBtn3.onclick = function() {
 	modalAnal.style.display = 'block';
 }
@@ -55,10 +54,6 @@ let result = new Result(0, 0, 0, 0);
 // специальная переменная для процентов
 let percents;
 
-
-// проверяю, корректность созданного объекта
-//result.checkMethod();
-
 function considering() {
 	textArea.onchange = inputText = `${textArea.value}`;
 	//очень странно, не понял почему, но если поменять местами в цикле знаки
@@ -84,8 +79,6 @@ let checkB1 = document.getElementById('checkB1');
 let checkB2 = document.getElementById('checkB2');
 let checkB3 = document.getElementById('checkB3');
 let checkB4 = document.getElementById('checkB4');
-
-
 
 actArea.onclick = function () {
 	  let output = considering();

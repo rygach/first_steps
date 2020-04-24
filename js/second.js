@@ -173,10 +173,14 @@ termValue2.onclick = function() {
 	document.getElementById('outInf').innerHTML = `Resultat is - ${areaTriangle(width,length,thirdSide)}`;
 }
 
-myBtn2.onclick = function() {
-	modalMath.style.display = 'block';
-}
+// myBtn2.onclick = function() {
+// 	modalMath.style.display = 'block';
+// }
 
-close2.onclick = function () {
-	modalMath.style.display = 'none'; 
-}
+// close2.onclick = function () {
+// 	modalMath.style.display = 'none'; 
+// }
+
+
+
+// ПРОЕКТ ДАННОГО ФАЙЛА ВРЕМЕННО ПРИОСТОНОВЛЕН 21.04.2020

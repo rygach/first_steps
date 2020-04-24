@@ -75,3 +75,36 @@ class Employer extends Man {
 let employer = new Employer('Grut', '22', '123', 'tree', '31.02.1995', '$2500');
 
 //employer.outing();
+
+
+// ката1 [COMPLETE]
+// function generateIntegers(m, n) {
+//     let arr = [];
+//     let spec = ((n - m) + 1);
+//     for (i = 0; i < spec; i++) {
+//         arr.push(i);
+//     }
+//     let a = 0;
+//     for (m; m <= n; m++) {
+//         arr[a] = m;
+//         a++;
+//     }
+//     console.log(arr);
+// }
+
+// generateIntegers(0,0);
+
+// ката2 [NON COMPLETE]
+// function missingValues(arr) {
+//     between = new Set(arr);
+//     result = Array.from(between);
+//     let a = 0;
+//     let spec = [];
+//     for (i=0;i<result.length;i++) {
+//         if (arr.indexOf(result[i])) {a++;}
+//     }
+//     return console.log(a);
+// }
+// let looking = [1, 2, 3, 3];
+
+// missingValues(looking);

@@ -1,3 +1,7 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #edeef0;
+}
 .modal {
 	display: none;
 	position: fixed;
@@ -13,45 +17,165 @@
 .modal-content {
 	background-color: #fefefe;
 	margin: 15% auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%; 
+	margin-top: 70px;
+	padding: 30px;
+	border: 1px #888 solid;
+	width: 60%; 
+	border-radius: 5px;
 }
-.close {
-	color: #aaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-	cursor: pointer;
-}
-.devices {
-	margin: 10px;
-}
-.basicBtn {
-	margin: 10px;
-}
-h1 {
-	font-family: sans-serif;
-}
-h2 {
-	font-family: sans-serif;
-}
-h3 {
-	font-family: sans-serif;
-}
+
+
 #root {
     margin: auto;
 	text-align: left;
-	width: 50%;
-	height: 1000px;
-	background: #edeef0;
-}
-#OOP {
-	margin-top: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
+	width: 70%;
 }
 #navig {
 	text-align: center;
-	box-shadow: 0 0 0 3px #d7e2f7;
+	border: 10px #4a76a8 solid;
+	background: #4a76a8;
+	border-radius: 5px;
+}
+.content-main-units {
+	text-align: center;
+	background: #fefefe;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px #e7e8ec solid;
+	border-radius: 5px;
+}
+
+
+img {
+	border-radius: 5px;
+	border-width: 3px;
+}
+button {
+	margin:0px; 
+	margin-top:0px;
+	padding:0px;
+	color: #000000;
+	background-color:  #ffffff;
+	border: 0px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: bold;
+	color: #4a76a8;
+}
+button:hover {
+	background-color: #edeef0;
+}
+.button-close {
+	float: right;
+	width: 25px;
+	height: 25px;
+	border: 2px #4a76a8 solid;
+	font-size: 20px;
+}
+.main-display-buttons {
+	margin: 10px;
+	padding: 8px;
+	font-size: 20px;
+}
+.main-display-buttons:hover {
+	margin: 10px;
+	padding: 8px;
+}
+.button-modal {
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 8px;
+	border: 2px #4a76a8 solid;
+	font-size: 15px;
+}
+.modal-inputs {
+	width: 50%;
+	height: 20px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 2px #4a76a8 solid;
+}
+.modal-units {
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+
+/* =================================== */
+/* ВЁРСТКА ПОСТОВ КАК В ВК */
+post-news
+post-header
+post-header-info
+post-body
+post-body-info
+
+
+.post-news {
+	border: 1px #e7e8ec solid;
+}
+.post-header {
+	margin-top: 50px;
+	height: 50px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: white;
+	border-top: 1px #e7e8ec solid;
+	border-right: 1px #e7e8ec solid;
+	border-left: 1px #e7e8ec solid;
+}
+.post-header-info {
+	height: 33px;
+	font-size: 100%;
+	display: block;
+	background-color: white;
+	font-size: 27px;
+	padding-top: 14px;
+}
+.post-body {
+	padding-top: 8px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-top: 1px #e7e8ec solid;
+	background-color: white;
+	border-right: 1px #e7e8ec solid;
+	border-left: 1px #e7e8ec solid;
+}
+.post-body-info {
+	background-color: white;
+	font-size: 16px;
+}
+.post-replies {
+	height: 50px;
+	border-top: 1px #e7e8ec solid;
+	padding-top: 8px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 8px;
+	background-color: white;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom: 1px #e7e8ec solid;
+	border-right: 1px #e7e8ec solid;
+	border-left: 1px #e7e8ec solid;
+}
+.post-replies-info {
+	height: 33px;
+	width: 20%;
+	float: left;
+	padding-top: 13px;
+}
+.tempFeatureComment {
+	height: 33px;
+	width: 50%;
+	float: left;
+	padding-top: 13px;
 }

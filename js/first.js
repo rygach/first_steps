@@ -79,3 +79,13 @@ myBtn.onclick = function() {
 close.onclick = function () {
 	myModal.style.display = 'none'; 
 }
+
+let commentBtn = document.getElementsByClassName('post-comment-btns')[0];
+commentBtn.onclick = () => {
+	document.getElementsByClassName('tempFeatureComment')[0].innerHTML = 'It\'s will be soon :)';
+}
+
+let commentDelBtn = document.getElementsByClassName('post-comment-del')[0];
+commentDelBtn.onclick = () => {
+		document.getElementsByClassName('tempFeatureComment')[0].innerHTML = '';
+}

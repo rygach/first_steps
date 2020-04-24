@@ -1,13 +1,16 @@
-//let modalAnal = document.getElementById('modalAnal');
+let modalDMB = document.getElementById('modalDMB');
 let myBtn4 = document.getElementById('myBtn4');
-let close4 = document.getElementsByClassName('close')[2];
+let close4 = document.getElementsByClassName('button-close')[3];
+let calculateDMB = document.getElementById('calculateDMB');
+let dateResult = document.getElementById('dateResult');
 
 
 myBtn4.onclick = function() {
-    //modalAnal.style.display = 'block';
-    console.log('it\'s working')
+    modalDMB.style.display = 'block';
 }
 
-close3.onclick = function () {
-	modalAnal.style.display = 'none'; 
+close4.onclick = function () {
+	modalDMB.style.display = 'none'; 
 }
+
+
