@@ -16,7 +16,7 @@
 
 let modalAnal = document.getElementById('modalAnal');
 let myBtn3 = document.getElementById('myBtn3');
-let close3 = document.getElementsByClassName('close')[2];
+let close3 = document.getElementsByClassName('button-close')[2];
 
 myBtn3.onclick = function() {
 	modalAnal.style.display = 'block';

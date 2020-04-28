@@ -32,7 +32,7 @@ function areaTriangle(a,b,c) {
 let myModal = document.getElementById('myModal');
 let myBtn = document.getElementById('myBtn');
 let myBtn1 = document.getElementById('myBtn1');
-let close = document.getElementsByClassName('close')[0];
+let close = document.getElementsByClassName('button-close')[0];
 let inpEnter1 = document.getElementById('widthFigure');
 let inpEnter2 = document.getElementById('lengthFigure');
 

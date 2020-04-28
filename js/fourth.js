@@ -13,4 +13,15 @@ close4.onclick = function () {
 	modalDMB.style.display = 'none'; 
 }
 
+calculateDMB.onclick = () => {
+    let dateOfArmy = document.getElementById('dateOfArmy');
+    dateResult.innerHTML = `Your freedom will be ${freedomDate()}`;
+}
 
+function freedomDate () {
+    let freeDate = new Date;
+    freeDate.setFullYear(1222, 12, 12);
+    // freeDate.setMonth(dateOfArmy.month);
+    // freeDate.setFullYear(dateOfArmy.year);
+    return(console.log(freeDate.value));
+}
