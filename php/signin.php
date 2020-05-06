@@ -2,6 +2,7 @@
 
 
 
+
 <form method="post" action="auth.php">
     <input type="text" name='login' placeholder='login'>
     <input type="text" name='pwd' placeholder='password'>

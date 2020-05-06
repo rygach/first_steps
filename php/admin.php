@@ -1,8 +1,8 @@
-<!-- с курса LoftBlog "Создание динамического веб-сайта PHP/MySQL/JS" -->
-
-
-
 <?php
+// с курса LoftBlog "Создание динамического веб-сайта PHP/MySQL/JS"
+
+
+
 require_once 'db.php';
 
 if (isset($_SESSION['user_login'])) {

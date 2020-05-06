@@ -1,8 +1,9 @@
-<!-- с курса LoftBlog "Создание динамического веб-сайта PHP/MySQL/JS" -->
-
-
-
 <?php
+// с курса LoftBlog "Создание динамического веб-сайта PHP/MySQL/JS"
+
+
+
+
 require_once 'db.php';
 
 
