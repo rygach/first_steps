@@ -4,7 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>JavaScript Learning</title>
-	<link rel="stylesheet" href ='/css/123.css'>
+	<link rel="stylesheet" href ='css/123.css'>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -121,8 +122,8 @@
 	<script src="js/second.js"></script>
 	<script src="js/third.js"></script>
 	<script src="js/fourth.js"></script>
-	<script src="js/OOP.js"></script>
 	<script src="js/practice.js"></script>
+	<script src="js/ajax.js"></script>
 </body>
 
 </html>
